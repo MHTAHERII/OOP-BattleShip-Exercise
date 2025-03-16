@@ -1,9 +1,11 @@
 import java.util.Scanner;
 
 public class main {
+    static boolean Bot;
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         String number;
+
         String YELLOW = "\033[33m";
         String RESET = "\033[0m";
 //        String RED = "\033[31m";
@@ -29,10 +31,13 @@ public class main {
             number = input.nextLine();
             switch (number) {
                 case "1":
+                    Bot = false;
                     Game.Start();
+
                     break;
                 case "2":
-                    Game.AIplay();
+                    Bot = true;
+                    Game.Start();
                     break;
                 case "3":
                     System.exit(0);

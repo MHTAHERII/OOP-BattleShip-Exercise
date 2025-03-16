@@ -13,12 +13,17 @@ public class InputValidator {
         return (row >= 'A' && row <= 'Z') && (cool >= '0' && cool <= '9');
     }
 
-    public static void playerTurn(char[][] opponentGrid, char[][] trackingGrid) {
+    public static void playerTurn(char[][] opponentGrid, char[][] trackingGrid,Boolean Bot) {
         Scanner input = new Scanner(System.in);
         Boolean Hit = true;
+        String choice ;
         while (Hit) {
             System.out.println("Enter your choice : ");
-            String choice = input.nextLine();
+            if (Bot) { choice=AIplayer.makeMove();
+            }else {
+                choice=input.nextLine();
+            }
+
             if (validateInput(choice)) {
                 int row = choice.charAt(0) - 'A';
                 int col = choice.charAt(1) - '0';

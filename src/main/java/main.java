@@ -43,8 +43,10 @@ public class main {
                     System.exit(0);
                     break;
                 default:
-                    System.out.println("Invalid Input . Please try again .");
+                    System.out.println("Invalid Input  .  Please try again .");
             }
+
+
 
         }
     }

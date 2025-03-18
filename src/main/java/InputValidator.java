@@ -21,7 +21,7 @@ public class InputValidator {
             System.out.println("Enter your choice : ");
             if (Bot) { choice=AIplayer.makeMove();
             }else {
-                choice=input.nextLine();
+                choice=input.nextLine().toUpperCase();
             }
 
             if (validateInput(choice)) {

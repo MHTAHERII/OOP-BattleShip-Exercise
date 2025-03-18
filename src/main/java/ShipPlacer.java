@@ -72,7 +72,7 @@ public class ShipPlacer {
         while (!placeshipFound) {
             Board.display(grid);
             System.out.println( player+" Enter the coordinates (row, column) of the tip of your desired ship, size" + Size + ".:");
-            choice = input.nextLine();
+            choice = input.nextLine().toUpperCase();
             if (InputValidator.validateInput(choice)) {
                 while (true) {
                     System.out.println("Is it horizontal?(y/n)");

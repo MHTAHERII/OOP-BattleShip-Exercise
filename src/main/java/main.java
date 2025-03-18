@@ -8,8 +8,6 @@ public class main {
 
         String YELLOW = "\033[33m";
         String RESET = "\033[0m";
-//        String RED = "\033[31m";
-//        String BLUE = "\033[34m";
 
         System.out.println("\033[31m███    ███\033[34m ██   ██    ");
         System.out.println("\033[31m████  ████\033[34m ██   ██    ");
@@ -23,7 +21,6 @@ public class main {
 
         while (true) {
             System.out.println(YELLOW + "💥🔥 Soldier! Get ready for battle! Welcome to the game! 🎖️🔫" + RESET);
-//            System.out.println("Welcome to Battle Ship");
             System.out.println("Select the following options to play:");
             System.out.println("1. Two-player game");
             System.out.println("2. Play with AI");

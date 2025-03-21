@@ -10,6 +10,12 @@ public class ShipPlacer {
         placeShipRandom(grid, 2);
     }
 
+    public static void placeShips(char[][] grid, String player) {
+        placeShip(grid, 5, player);
+        placeShip(grid, 4, player);
+        placeShip(grid, 3, player);
+        placeShip(grid, 2, player);
+    }
     public static void placeShipRandom(char[][] grid, int size) {
         Random rand = new Random();
         boolean placeshipFound = false;
@@ -55,12 +61,6 @@ public class ShipPlacer {
 
     }
 
-    public static void placeShips(char[][] grid, String player) {
-        placeShip(grid, 5, player);
-        placeShip(grid, 4, player);
-        placeShip(grid, 3, player);
-        placeShip(grid, 2, player);
-    }
 
     public static void placeShip(char[][] grid, int Size, String player) {
         Scanner input = new Scanner(System.in);

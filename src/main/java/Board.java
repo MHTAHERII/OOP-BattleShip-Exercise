@@ -2,8 +2,14 @@ public class Board  {
     static final int GRID_SIZE = 10;
     public char[][] Grid;
     public char[][] trackingGrid;
+     private  String Name;
 
-    public Board() {
+    public String getName() {
+        return Name;
+    }
+
+    public Board(String Name) {
+        this.Name = Name;
         Grid = new char[GRID_SIZE][GRID_SIZE];
         trackingGrid = new char[GRID_SIZE][GRID_SIZE];
         initializeGrid(Grid);

@@ -12,7 +12,6 @@ public class InputValidator {
 
         return (row >= 'A' && row <= 'Z') && (cool >= '0' && cool <= '9');
     }
-
     public static void playerTurn(char[][] opponentGrid, char[][] trackingGrid,Boolean Bot) {
         Scanner input = new Scanner(System.in);
         Boolean Hit = true;

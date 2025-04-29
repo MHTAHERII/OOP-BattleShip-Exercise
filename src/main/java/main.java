@@ -28,13 +28,12 @@ public class main {
             number = input.nextLine();
             switch (number) {
                 case "1":
-                    Bot = false;
-                    Game.Start();
-
+                    Game game2Player = new Game(false);
+                    game2Player.Start();
                     break;
                 case "2":
-                    Bot = true;
-                    Game.Start();
+                    Game gameAI = new Game(true);
+                    gameAI.Start();
                     break;
                 case "3":
                     System.exit(0);

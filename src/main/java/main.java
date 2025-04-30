@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class main {
     static boolean Bot;
     public static void main(String[] args) {
+        Game game ;
         Scanner input = new Scanner(System.in);
         String number;
 
@@ -28,12 +29,12 @@ public class main {
             number = input.nextLine();
             switch (number) {
                 case "1":
-                    Game game2Player = new Game(false);
-                    game2Player.Start();
+                    game = new Game(false);
+                    game.Start();
                     break;
                 case "2":
-                    Game gameAI = new Game(true);
-                    gameAI.Start();
+                    game = new Game(true);
+                    game.Start();
                     break;
                 case "3":
                     System.exit(0);
